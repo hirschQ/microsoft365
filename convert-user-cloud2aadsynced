@@ -1,4 +1,5 @@
 ####you synced more than whan active directory to azure ad and one of your domain controller is offline? 
 ###you want to add users from missing domain controller to another already aad syncing domaincontroller?
-##follow me:
+##follow me:https://github.com/hirschQ/microsoft365/blob/ed22d50bfdc9bc4ee2b313f3073a26690f1b79f6/connect-to-msonline
+
 
