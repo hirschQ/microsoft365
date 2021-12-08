@@ -1,0 +1,23 @@
+####you synced more than whan active directory to azure ad and one of your domain controller is offline? or
+###you want to add users from missing domain controller to another already aad syncing domaincontroller?
+
+connect-msolservice
+
+##error? follow me:https://github.com/hirschQ/microsoft365/blob/ed22d50bfdc9bc4ee2b313f3073a26690f1b79f6/connect-to-msonline
+
+## caution for setups up to 30 users: experienced user reports like "had to authenticate without any purpose" > think about setting global warning of maintenance and possible issues? ##
+
+Set-MsolDirSyncEnabled -EnableDirSync $false
+
+wait 2 minutes, log into admin.microsoft.com >> all users are "cloud users only"
+
+#delete the aad sync user from offline server, search for "On-Premises Directory Synchronization Service Account" and check domain controller hostname in username syntax
+
+
+Set-MsolDirSyncEnabled -EnableDirSync $true
+
+wait 15 minutes. log in to admin.microsot.com >> all users are aad synced users again, except the ones from offline server.
+##all users synced by deleted active directory user are "cloud only users now"
+
+
+### follow me for sync cloud-only user to aad synced users:
