@@ -6,5 +6,15 @@ go to active directory server
   copy GUID
   
 
-##save GUID2ImmutableID.ps1 to administrators documents path to follow next steps: link to GUID2ImmutableID.ps1 
+##save GUID2ImmutableID.ps1 to administrators documents path to follow next steps: link to GUID2ImmutableID.ps1  https://github.com/hirschQ/microsoft365/blob/f09dc17ffafbe5b3f9581d02b6487d55a7299f88/GUID2ImmutableID.ps1 
+
+ps: c:\users\adminsitrator\documents> .\GUID2ImmutableID.ps1 *YOUR*COPIED*GUID*
+                                      .\GUID2ImmutableID.ps1 8COQmUUK70KYEJGCrw2WbQ==
+                                      
+
+####CAUTION: COMPARE ALL USER ATTRIBUTES ON-PREM AND CLOUDUSER and set up on-prem using saming attributes like cloud
+##convert cloud user: connect to msolonline using tenant admin creds: https://github.com/hirschQ/microsoft365/blob/f09dc17ffafbe5b3f9581d02b6487d55a7299f88/connect-to-msonline 
+
+Set-Msoluser -UserprincipalName "user@hirschq.com" -ImmutableID GUID-HERE 
+
 
