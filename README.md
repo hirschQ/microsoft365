@@ -10,4 +10,7 @@ collection of how to's and (personal) best practice workarounds
 
 >> follow file convert-user-cloud2aadsynced
 
+#getting erros while step convert-user-cloud2aadsynced?
+
+>> follow https://github.com/hirschQ/microsoft365/blob/ed22d50bfdc9bc4ee2b313f3073a26690f1b79f6/connect-to-msonline
 
