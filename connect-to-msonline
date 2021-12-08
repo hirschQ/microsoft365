@@ -1,0 +1,9 @@
+Install-Module -Name MSOnline
+##can not install module because of execution policy? follow me: https://github.com/hirschQ/windows-stuff/blob/f8b6a90cf8462c76a91e319a7cf1d166efad29f0/powershell-execution-policy 
+##can not install module because of 'can not acces nuget repos blabla'?  follow me: https://github.com/hirschQ/windows-stuff/blob/1f6e6f4e309d14bce9b782fb6f05bb02fb79127c/force-ps-high-encryption
+
+#workarounds needed? repeat Install-module -name msonline
+Connect-MsolService
+
+#enter your tenants admin creds
+
