@@ -1,0 +1,10 @@
+###you want to convert cloud synced users to be aad synced users:
+
+go to active directory server 
+  ps: get-aduser q.hirsch | fl objectguid
+  
+  copy GUID
+  
+
+##save GUID2ImmutableID.ps1 to administrators documents path to follow next steps: link to GUID2ImmutableID.ps1 
+
