@@ -6,7 +6,7 @@ collection of how to's and (personal) best practice workarounds
 >> not supported, but working properly while using immutable-id as cloud anchor (default settings) on each active directory. take care: don't sync duplicate objects!
 
 
-#you want to convert cloud user to active directory synced users without changing ad-sync default settings to use immutable-id as sync anchor?
+#convert cloud user to active directory synced users without changing ad-sync default settings to use immutable-id as sync anchor
 
 >> follow me: https://github.com/hirschQ/microsoft365/blob/ace0863c2f6f7615c7c15d5903c2c774442ad83e/delete-user-cloud2aadsynced
       #getting erros while step convert-user-cloud2aadsynced?
