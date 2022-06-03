@@ -8,7 +8,7 @@ Install-Module MSOnline
 #sharepoint
 
 #teams
-
+Install-Module MicrosoftTeams
 
 
 #connect
@@ -19,3 +19,7 @@ Connect-ExchangeOnline
 #2Azure
 Import-Module MSOnline
 Connect-MsolService
+
+#2Teams
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams
