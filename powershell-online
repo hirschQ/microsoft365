@@ -1,0 +1,21 @@
+#prequesites 
+#installation of powershell modules
+
+#exchange online
+Install-Module ExchangeOnlineManagement
+#azure
+Install-Module MSOnline
+#sharepoint
+
+#teams
+
+
+
+#connect
+#2exchangeonline
+Import-Module ExchangeOnlineManagement
+Connect-ExchangeOnline
+
+#2Azure
+Import-Module MSOnline
+Connect-MsolService
